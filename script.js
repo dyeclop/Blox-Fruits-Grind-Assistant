@@ -118,3 +118,15 @@ document.getElementById('calculateBtn').addEventListener('click', () => {
     });
     document.getElementById('results').classList.remove('hidden');
 });
+// Toggle Button UI Class Handler Engine
+standardBtn.addEventListener('click', () => {
+    currentMode = "standard";
+    standardBtn.classList.add('active');
+    fastestBtn.classList.remove('active');
+});
+
+fastestBtn.addEventListener('click', () => {
+    currentMode = "fastest";
+    fastestBtn.classList.add('active');
+    standardBtn.classList.remove('active');
+});
